@@ -20,7 +20,7 @@ npm run dev
 ```
 ### Шаг 3: Откройте браузер:
 После запуска сервера, на экране появится ссылка http://localhost:5173/. По этому адресу в браузере будет доступно ваше приложение.<p>
-<p text-align="center"><img src="assets/example.png" alt="picture" width="60%"></p>
+<p text-align="center"><img src="assets/example.png" alt="picture" width="100%"></p>
 
 ## Доступный функционал
 - При нажатии на кнопку «Добавить круг» в области слайда добавится кружочек
