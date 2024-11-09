@@ -1,0 +1,70 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Общие стили для приложения */
+.App {
+  height: 100vh;
+  position: relative;
+}
+
+.button {
+  width: auto;
+  height: auto;
+  padding: 15px 70px;
+  margin-bottom: 25px;
+  color: white;
+  background-color: #00b0f1;
+  border:none;
+  border-radius:7px;
+  font-size: 20px;
+  transition: opacity 0.2s; 
+}
+.button:hover {
+  opacity: 0.8;
+}
+
+.circle-container {
+  padding: 0;
+  margin: 0;
+  background-color: #e8e8e8;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.canvas {
+  position: relative;
+  width: 960px;
+  height: 540px;
+  border: none;
+  border-radius: 15px;
+  overflow: hidden;
+  background-color: white;
+  box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2); 
+
+}
+
+.circle {
+  position: absolute;
+  background-color: #00b0f1;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: opacity 0.2s; /* Добавим плавный переход для прозрачности и рамки */
+}
+
+.circle.selected {
+  opacity: 0.8; /* Делаем выделенные круги немного прозрачнее */
+  border: 2px solid #00b0f1; /* Добавляем рамку выделенным кругам */
+}
+
+
+.selection-box {
+  position: absolute;
+  border: 1px dashed rgba(0, 0, 255, 0.5); /* Дашевая линия */
+  background-color: rgba(0, 0, 255, 0.1); /* Полупрозрачный фон */
+  pointer-events: none; /* Позволяет клики проходить через прямоугольник */
+}
